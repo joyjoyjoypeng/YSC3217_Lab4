@@ -13,7 +13,7 @@ void mm (size_t N, NUMTYPE * A, NUMTYPE * B, NUMTYPE * C) {
   int child_pid = fork ();
   if (child_pid == -1) return; // Clone failed
   if (child_pid ==0) {
-    for (unsigned int x = 0 ; x < N/2+1 ; x++) {
+    for (unsigned int x = 0 ; x < N/2 ; x++) {
       for (unsigned int y = 0 ; y < N ; y++) {
         unsigned int tidx = x + y * N ;
         shared_grid[tidx] = 0;
