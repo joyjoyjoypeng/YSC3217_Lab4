@@ -1,7 +1,7 @@
 PROGS := mm_proc
 CFLAGS:= -O3 -Wall -Werror -Wextra
 CC := gcc
-TESTS := test2.txt test32.txt test500.txt
+TESTS := test500.txt test2.txt test32.txt
 
 all : ${PROGS}
 
